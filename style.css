@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   height:100vh;
+  background-color: rgb(51,102,204);
 
 }
 
@@ -32,7 +33,9 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(35, 76, 127);
+  /* color: rgb(35, 76, 127); */
+  color: rgb(6,31,150);
+  /* color: white; */
   position: absolute;
   top: 0.75rem;
   left: 1.75rem;
@@ -50,7 +53,8 @@ body {
   border-radius: 2rem;
 
   z-index: -1;
-  background: rgb(128,170,68);
+  /* background: rgb(128,170,68); */
+  background-color: rgb(148,197,23);
   transition: width 200ms;
 }
 
@@ -70,13 +74,15 @@ body {
   position: relative;
   z-index: 2;
 
-  background-color: rgb(128,170,68);
+  /* background-color: rgb(128,170,68); */
+  background-color: rgb(148,197,23);
   width: 4rem;
   height: 4rem;
   border-radius: 1000000px;
   text-align: center;
   font-size: 2.5rem;
-  color:rgb(35, 76, 127);
+  /* color:rgb(35, 76, 127); */
+  color: rgb(6,31,150);
   line-height: 4.25rem;
 }
 
@@ -87,7 +93,8 @@ body {
   top: 0.25rem;
 
   white-space: nowrap;
-  background-color: rgb(35, 76, 127);
+  /* background-color: rgb(35, 76, 127); */
+  background-color: rgb(6,31,150);
   color: white;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -107,7 +114,7 @@ body {
   left: calc(-100% - 5rem);
   width: calc(100% + 5rem);
   bottom: 0;
-  background-image: linear-gradient(-45deg, transparent 2.82rem, rgb(128,170,68) 2.82rem);
+  background-image: linear-gradient(-45deg, transparent 2.82rem, rgb(148,197,23) 2.82rem);
   background-position: right center;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
@@ -118,6 +125,6 @@ body {
 }
 
 .button__contact-item-link:hover{
-  color:rgb(35, 76, 127);
+  color: rgb(6,31,150);
   font-weight:bold;
 }
