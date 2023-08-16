@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+
+}
+
+.button__container{
+  width: 60vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.button__getStarted,
+.button__learnMore {
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.button__getStarted p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(35, 76, 127);
+  position: absolute;
+  top: 0.75rem;
+  left: 1.75rem;
+  white-space: nowrap;
+}
+
+.button__getStarted::before {
+  content:"";
+  display: block;
+  position: absolute;
+  inset: 0;
+
+  height: 4rem;
+  width: 4rem;
+  border-radius: 2rem;
+
+  z-index: -1;
+  background: rgb(128,170,68);
+  transition: width 200ms;
+}
+
+.button__getStarted:is(:hover, :focus)::before {
+  width: 18.5rem;
+}
+
+
+/* xxx */
+
+.button__contact-item{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.button__contact-item-icon {
+  position: relative;
+  z-index: 2;
+
+  background-color: rgb(128,170,68);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1000000px;
+  text-align: center;
+  font-size: 2.5rem;
+  color:rgb(35, 76, 127);
+  line-height: 4.25rem;
+}
+
+.button__contact-item-link {
+  position:absolute;
+  z-index: 1;
+  left: 2rem;
+  top: 0.25rem;
+
+  white-space: nowrap;
+  background-color: rgb(35, 76, 127);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  width: 16rem;
+  /* text-align: center; */
+
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  overflow: hidden;
+}
+
+.button__contact-item-link::after{
+  content:"";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: calc(-100% - 5rem);
+  width: calc(100% + 5rem);
+  bottom: 0;
+  background-image: linear-gradient(-45deg, transparent 2.82rem, rgb(128,170,68) 2.82rem);
+  background-position: right center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button__contact-item-link:hover::after {
+  transform: translate(100%, 0);
+}
+
+.button__contact-item-link:hover{
+  color:rgb(35, 76, 127);
+  font-weight:bold;
+}
